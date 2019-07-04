@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  crawler:
+    build:
+      context: ${MAIN_DIR}
+      dockerfile: ./Dockerfile
+    container_name: ppt
+    stdin_open: true
+    restart: always
+    volumes:
+    - ${MAIN_DIR}:${CONTAINER_DIR}
+    working_dir: ${CONTAINER_DIR}
+    ports:
+    - 3000:3000
+    entrypoint: node
+    command: actions/example.js

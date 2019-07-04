@@ -1,0 +1,10 @@
+{
+  "name": "ppt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Arthur Lawrence",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^1.18.1"
+  }
+}
